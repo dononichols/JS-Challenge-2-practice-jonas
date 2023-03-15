@@ -1,4 +1,7 @@
 
+// Strings & Template Literals
+
+/*
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -16,3 +19,34 @@ console.log(jonasNew)
 console.log(`string
 multiple
 lines`);
+
+*/
+
+
+///////////////////////////////////////////
+//////////////////////////////////////////
+// APP to determine if a person is allowed to recieve a drivers liscense or not
+// how many years left before they can test for the drivers liscense
+
+// the less common way to write this
+/*
+const age = 19;
+const isOldEnough = age >= 18;
+
+if(isOldEnough) {
+    console.log('you are old enough.');
+} else {
+    console.log('sorry, you are not old enough.')
+}
+*/
+
+// more common way to write this
+
+const age = 14;
+
+if (age >= 18) {
+    console.log('Sarah can start driving.')
+} else {
+    const yearsLeft = 18 - age; // variable for years left
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years.`)
+}
