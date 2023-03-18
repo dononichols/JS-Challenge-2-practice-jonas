@@ -40,6 +40,8 @@ if(isOldEnough) {
 }
 */
 
+
+/*
 // more common way to write this
 
 const age = 14;
@@ -49,4 +51,49 @@ if (age >= 18) {
 } else {
     const yearsLeft = 18 - age; // variable for years left
     console.log(`Sarah is too young. Wait another ${yearsLeft} years.`)
+}
+
+
+///////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+const birthYear = 2015;
+let century; // declared but not defined. will be defined later
+
+if (birthYear <= 2000) {
+    century = 20;
+
+} else {
+    century = 21;
+}
+
+console.log(century);
+*/
+
+/////////////////////////
+// BMI using control statement
+
+// Test Data 2: 
+// Mark is 95kg and is 1.88m tall.
+// John is 85kg and is 1.76m tall.
+
+
+/////----------------------------
+
+// CODING CHALLENGE #2 
+///////////////////////////
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark/heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI at ${BMIMark} is higher than John's BMI at ${BMIJohn}!`)
+} else {
+    console.log(`Johns BMI at ${BMIJohn} is higher than Mark's BMI at ${BMIMark}!`)
 }
